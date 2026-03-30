@@ -1,0 +1,14 @@
+{
+  "name": "secure-audio-stream",
+  "version": "1.0.0",
+  "description": "Secure encrypted audio streaming server with Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "ws": "^8.19.0"
+  }
+}
