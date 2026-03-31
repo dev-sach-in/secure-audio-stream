@@ -95,7 +95,6 @@ mysql
 ```
 ```shell
 update asterisk.recording_log set location = REPLACE(location, 'https://sampledomain.sample.com:5043','https://sampledomain.sample.com:5044');
-update asterisk.recording_log set location = REPLACE(location, 'https://dialer163.telxio.com.sg','https://sampledomain.sample.com:5044');
 ```
 
 ## Updating IPTABLES
