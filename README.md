@@ -13,3 +13,7 @@ mkdir -p /var/www/node && cd /var/www/node
 ```shell
 git clone https://github.com/dev-sach-in/secure-audio-stream.git /var/www/node
 ```
+
+```shell
+sh install.sh
+```
