@@ -15,5 +15,9 @@ git clone https://github.com/dev-sach-in/secure-audio-stream.git /var/www/node
 ```
 
 ```shell
+cd /var/www/node/secure-audio-stream
+```
+
+```shell
 sh install.sh
 ```
