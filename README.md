@@ -57,7 +57,7 @@ sh install.sh
 nano /etc/astguiclient.conf
 ```
 ```shell
-VARserver_domain => sampledomain.sample.com:5043
+VARserver_domain => sampledomain.sample.com:443
 # add this after above line
 VARrecording_domain => sampledomain.sample.com:5044
 ```
@@ -94,7 +94,7 @@ $server_ip = $VARrecording_domain;
 mysql
 ```
 ```shell
-update asterisk.recording_log set location = REPLACE(location, 'https://sampledomain.sample.com:5043','https://sampledomain.sample.com:5044');
+update asterisk.recording_log set location = REPLACE(location, 'https://sampledomain.sample.com:443','https://sampledomain.sample.com:5044');
 ```
 
 ## Updating IPTABLES
@@ -106,7 +106,7 @@ iptables-save > /usr/src/iptables.txt.orig
 nano /usr/src/iptables.txt
 ```
 ```shell
-# -A INPUT -p tcp -m tcp --dport 5043 -m comment --comment "Accept Web Port" -j ACCEPT
+# -A INPUT -p tcp -m tcp --dport 443 -m comment --comment "Accept Web Port" -j ACCEPT
 # add below code after above code
 -A INPUT -p tcp -m tcp --dport 5044 -m comment --comment "Accept Web Port" -j ACCEPT
 ```
