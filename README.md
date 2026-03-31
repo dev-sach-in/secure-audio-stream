@@ -19,5 +19,9 @@ cd /var/www/node/secure-audio-stream
 ```
 
 ```shell
+chmod 775 install.sh
+```
+
+```shell
 sh install.sh
 ```
