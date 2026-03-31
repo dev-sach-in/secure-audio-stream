@@ -7,8 +7,7 @@ yum install git
 ```
 
 ```shell
-mkdir -p /var/www/node
-cd /var/www/node
+mkdir -p /var/www/node && cd /var/www/node
 ```
 
 ```shell
