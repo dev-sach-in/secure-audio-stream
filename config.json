@@ -1,8 +1,7 @@
 {
   "users": {
     "User-1": "StrongPa$$w0rd",
-    "User-2": "VStrongPa$$w0rd",
-    "User-3": "VVStrongPa$$w0rd",
+    "User-2": "VStrongPa$$w0rd"
   },
   "domain": "sampledomain.sample.com",
   "port": 5044,
