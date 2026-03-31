@@ -99,11 +99,11 @@ update asterisk.recording_log set location = REPLACE(location, 'https://sampledo
 
 ## Updating IPTABLES
 ```shell
-iptables-save > /home/User-3184/iptables.txt
-iptables-save > /home/User-3184/iptables.txt.orig
+iptables-save > /usr/src/iptables.txt
+iptables-save > /usr/src/iptables.txt.orig
 ```
 ```shell
-nano /home/User-3184/iptables.txt
+nano /usr/src/iptables.txt
 ```
 ```shell
 # -A INPUT -p tcp -m tcp --dport 5043 -m comment --comment "Accept Web Port" -j ACCEPT
@@ -112,7 +112,7 @@ nano /home/User-3184/iptables.txt
 ```
 ```shell
 #restore iptables rules
-iptables-restore < /home/User-3184/iptables.txt
+iptables-restore < /usr/src/iptables.txt
 iptables-save > /etc/sysconfig/iptables
 iptables -nvL
 ```
