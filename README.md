@@ -57,9 +57,9 @@ sh install.sh
 nano /etc/astguiclient.conf
 ```
 ```shell
-VARserver_domain => 163.9766527f2b5d3e95d4a733fcfb77bd7e.telxio.com.sg:5043
+VARserver_domain => sampledomain.sample.com:5043
 # add this after above line
-VARrecording_domain => 163.9766527f2b5d3e95d4a733fcfb77bd7e.telxio.com.sg:5044
+VARrecording_domain => sampledomain.sample.com:5044
 ```
 
 ### update the following lines in following cron files
@@ -94,8 +94,8 @@ $server_ip = $VARrecording_domain;
 mysql
 ```
 ```shell
-update asterisk.recording_log set location = REPLACE(location, 'https://163.9766527f2b5d3e95d4a733fcfb77bd7e.telxio.com.sg:5043','https://163.9766527f2b5d3e95d4a733fcfb77bd7e.telxio.com.sg:5044');
-update asterisk.recording_log set location = REPLACE(location, 'https://dialer163.telxio.com.sg','https://163.9766527f2b5d3e95d4a733fcfb77bd7e.telxio.com.sg:5044');
+update asterisk.recording_log set location = REPLACE(location, 'https://sampledomain.sample.com:5043','https://sampledomain.sample.com:5044');
+update asterisk.recording_log set location = REPLACE(location, 'https://dialer163.telxio.com.sg','https://sampledomain.sample.com:5044');
 ```
 
 ## Updating IPTABLES
