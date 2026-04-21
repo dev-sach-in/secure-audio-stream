@@ -5,6 +5,7 @@
   },
   "domain": "sampledomain.sample.com",
   "port": 5044,
+  "http_port": 88,
   "audio_dir_mp3": "/var/spool/asterisk/monitorDONE/MP3/",
   "audio_dir_root": "/var/spool/asterisk/monitorDONE/",
   "log_retention_days": 90
