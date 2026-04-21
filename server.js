@@ -50,8 +50,8 @@ const configData = loadConfig();
 USERS = configData.users;
 
 const CONFIG = {
-  PORT: configData.port || 443,
-  HTTP_PORT: configData.http_port || 80,
+  PORT: configData.port || 5044,
+  HTTP_PORT: configData.http_port || 88,
   DOMAIN: configData.domain,
   AUDIO_DIRS: {
     MP3: configData.audio_dir_mp3 || '/var/spool/asterisk/monitorDone/MP3/',
